@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
+  import { supabase } from '$lib/supabaseClient'
+  import { onMount } from 'svelte';
 
   let menuButtonIsClicked = false;
 
   const showRoutes = () => {
     menuButtonIsClicked = !menuButtonIsClicked;
-    console.log(menuButtonIsClicked)
   }
 
   let thingsToDo = [
@@ -12,7 +13,17 @@
     {path:'/sitios', name:'🌍Sitios'},
     {path:'/peliculas', name:'🎥Películas'},
     {path:'/actividades', name:'⛸Actividades'}
-  ]
+  ];
+  // let data: any;
+
+  // const obtenerNombrePeliculas = async () => {
+  //   return await supabase.from('pelicula').select('nombre');
+  // };
+
+  // onMount(async () => {
+  //   const res = await obtenerNombrePeliculas();
+  //   data = res.data?.at(0).nombre;
+  // });
 </script>
 <nav class="bg-rose-400">
     <div class="max-w-full mx-auto sm:px-6 lg:px-8">
