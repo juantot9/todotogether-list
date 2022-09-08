@@ -1,3 +1,5 @@
-<h1 class="text-3xl font-bold">
-    Hello Andrea & JuanAn!
-</h1>
+<script>
+import Welcome from "$lib/welcome/Welcome.svelte";
+
+</script>
+<Welcome></Welcome>
