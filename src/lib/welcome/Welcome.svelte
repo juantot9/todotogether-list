@@ -5,8 +5,8 @@ import Links from "./links/Links.svelte";
 
 
 </script>
-<main class="h-full grid grid-cols-1 grid-rows-3 place-items-stretch">
+<main class="grid grid-cols-1 grid-rows-3 place-items-stretch">
     <Greeting/>
     <Links/>
-   <Dedication/>
+    <Dedication/>
 </main>
