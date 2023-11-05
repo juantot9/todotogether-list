@@ -1,17 +1,28 @@
 <!DOCTYPE html>
-<html data-theme="valentine" lang="en">
+<html class="dark" lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+    <link 
+      rel="preload"
+      href="%sveltekit.assets%/fonts/JosefinSans-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    >
+    <link 
+      rel="preload"
+      href="%sveltekit.assets%/fonts/JosefinSans-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    >
 		<meta name="viewport" content="width=device-width" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		%sveltekit.head%
 	</head>
-	<body class="h-screen">
-		<div class="h-screen flex flex-col flex-nowrap">
-			%sveltekit.body%
-		</div>
+	<body data-sveltekit-preload-data="hover" class="h-screen" data-theme="todotogether-theme">
+		<div style="display: contents" class="h-full overflow-hidden">%sveltekit.body%</div>
 	</body>
 </html>

@@ -5,10 +5,10 @@ export type ThingToDo = {
 };
 
 const thingsToDo: Array<ThingToDo> = [
-    {path: '/restaurantes', name: 'restaurantes', label:'🍣 Restaurantes'},
-    {path: '/sitios', name:'sitios', label:'🌍 Sitios'},
-    {path: '/peliculas', name:'peliculas', label:'🎥 Películas'},
-    {path: '/actividades', name:'actividades', label:'⛸ Actividades'},
+    {path: '/restaurants', name: 'restaurantes', label:'🍣 Restaurantes'},
+    {path: '/places', name:'sitios', label:'🌍 Sitios'},
+    {path: '/movies', name:'peliculas', label:'🎥 Películas'},
+    {path: '/activities', name:'actividades', label:'⛸ Actividades'},
 ];
 
 export default thingsToDo;

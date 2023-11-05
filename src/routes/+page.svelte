@@ -1,5 +1,7 @@
 <script>
-import Welcome from "$lib/welcome/Welcome.svelte";
-
+  import Welcome from "$lib/welcome/Welcome.svelte";
 </script>
-<Welcome></Welcome>
+<div class="grid grid-cols-1 grid-rows-3 place-items-stretch">
+  <Welcome></Welcome>
+</div>
+

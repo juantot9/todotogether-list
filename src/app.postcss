@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root [data-theme='todotogether-theme'] {
+	--theme-font-family-base: 'JosefinSans', sans-serif;
+	--theme-font-family-heading: 'JosefinSans', sans-serif;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('fonts/JosefinSans-VariableFont_wght.ttf'), url('fonts/JosefinSans-Bold.ttf');
+}
+
+html, body { @apply h-full overflow-hidden; }
